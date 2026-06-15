@@ -1,0 +1,17 @@
+# Copy to config/profile.yml and edit. dataset-doctor reads this to turn generic
+# checks into judgment specific to your problem.
+
+task: classification          # classification | regression
+target: churn                 # the column you are predicting
+
+# Columns you have already verified are available at prediction time.
+# dataset-doctor will not flag these as leakage suspects.
+known_safe:
+  - age
+  - tenure
+
+# Domain notes in plain language. The agent reads these and reasons with them.
+# Example: naming conventions that imply post-outcome data.
+notes: |
+  Any column prefixed with post_ is recorded after the outcome and must not be a feature.
+  refund_issued is only known after a customer has already churned.
