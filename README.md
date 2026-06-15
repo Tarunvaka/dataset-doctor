@@ -97,6 +97,3 @@ dataset-doctor/
 └── examples/customers.csv # demo dataset with a planted leak
 ```
 
-## License
-
-MIT. Recommendations are not guarantees; you are responsible for what you ship.
