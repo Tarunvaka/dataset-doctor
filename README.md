@@ -40,7 +40,7 @@ there is no good agentic tool aimed squarely at it. That's the gap this fills.
 ## Quickstart
 
 ```bash
-git clone https://github.com/<you>/dataset-doctor
+git clone https://github.com/Tarunvaka/dataset-doctor
 cd dataset-doctor
 pip install -r scripts/requirements.txt
 cp config/profile.example.yml config/profile.yml   # edit with your task + target
